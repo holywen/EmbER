@@ -3,7 +3,8 @@
 ## Xbmc Weather Underground Addon
 #
 ###############################################################################
-WEATHER_UNDERGROUND_VERSION = 46b0703a90fd26d88060c87a27b777534abe8c2b
+#WEATHER_UNDERGROUND_VERSION = 46b0703a90fd26d88060c87a27b777534abe8c2b
+WEATHER_UNDERGROUND_VERSION = 91a7f33ecd6d9b90d68bcbc5e5ecca728b846ed2
 WEATHER_UNDERGROUND_SOURCE = weather_underground-$(WEATHER_UNDERGROUND_VERSION).tar.gz
 WEATHER_UNDERGROUND_SITE = https://github.com/XBMC-Addons/weather.wunderground.git
 WEATHER_UNDERGROUND_SITE_METHOD = git
