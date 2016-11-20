@@ -1,0 +1,19 @@
+Fix build error
+Signed-off-by: Shaohua Wen <shaohua.wen@gmail.com>
+Index: b/Makefile
+===================================================================
+--- a/Makefile
++++ b/Makefile
+@@ -768,10 +768,10 @@
+ .build_opts: $(shell rm -f .build_opts.new; echo \'$(TARGET) $(BUILD_OPTIONS) $(VERBOSE_CFLAGS)\' > .build_opts.new; if cmp -s .build_opts .build_opts.new; then rm -f .build_opts.new; else mv -f .build_opts.new .build_opts; fi)
+ 
+ haproxy: $(OBJS) $(OPTIONS_OBJS) $(EBTREE_OBJS)
+-	$(LD) $(LDFLAGS) -o $@ $^ $(LDOPTS)
++	$(CC) -o $@ $^ $(LDOPTS)
+ 
+ haproxy-systemd-wrapper: $(WRAPPER_OBJS)
+-	$(LD) $(LDFLAGS) -o $@ $^ $(LDOPTS)
++	$(CC) -o $@ $^ $(LDOPTS)
+ 
+ $(LIB_EBTREE): $(EBTREE_OBJS)
+ 	$(AR) rv $@ $^

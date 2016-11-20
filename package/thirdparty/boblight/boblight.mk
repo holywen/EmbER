@@ -5,8 +5,9 @@
 #################################################################################
 
 BOBLIGHT_VERSION = r478
-BOBLIGHT_SITE_METHOD = svn
-BOBLIGHT_SITE = http://boblight.googlecode.com/svn/trunk/
+#BOBLIGHT_SITE_METHOD = svn
+BOBLIGHT_SITE = http://download2.polytechnic.edu.na/pub4/sourceforge/o/op/openpctv/sources/
+BOBLIGHT_SOURCE = boblight-$(BOBLIGHT_VERSION).tar.bz2
 BOBLIGHT_INSTALL_STAGING = YES
 BOBLIGHT_INSTALL_TARGET = YES
 BOBLIGHT_AUTORECONF = YES
