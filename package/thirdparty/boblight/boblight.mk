@@ -6,7 +6,7 @@
 
 BOBLIGHT_VERSION = r478
 #BOBLIGHT_SITE_METHOD = svn
-BOBLIGHT_SITE = http://sources.geexbox.org/devel/
+BOBLIGHT_SITE = http://download2.polytechnic.edu.na/pub4/sourceforge/o/op/openpctv/sources/
 BOBLIGHT_SOURCE = boblight-$(BOBLIGHT_VERSION).tar.bz2
 BOBLIGHT_INSTALL_STAGING = YES
 BOBLIGHT_INSTALL_TARGET = YES
